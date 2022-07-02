@@ -202,9 +202,9 @@ export function initGame(params) {
 
   setTimeout(() => {
     if (currentState.currentGame.myPlay == "") {
-      params.goTo("/desafio-m5/instructions/");
+      params.goTo("/desafio-final-five/instructions/");
     } else {
-      params.goTo("/desafio-m5/results/");
+      params.goTo("/desafio-final-five/results/");
     }
   }, 5000);
 

@@ -65,7 +65,7 @@ export function initWelcomePage(params) {
 
   const buttonEl: any = div.querySelector(".button");
   buttonEl.addEventListener("click", () => {
-    params.goTo("/desafio-m5/instructions");
+    params.goTo("/desafio-final-five/instructions");
   });
 
   div.appendChild(style);

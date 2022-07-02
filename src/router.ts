@@ -6,23 +6,23 @@ import { initResults } from "./pages/results";
 export function initRouter(container: Element) {
   const routes = [
     {
-      path: /\/desafio-m5/,
+      path: /\/desafio-final-five/,
       component: initWelcomePage,
     },
     {
-      path: /\/desafio-m5\/welcome/,
+      path: /\/desafio-final-five\/welcome/,
       component: initWelcomePage,
     },
     {
-      path: /\/desafio-m5\/instructions/,
+      path: /\/desafio-final-five\/instructions/,
       component: initInstructionsPage,
     },
     {
-      path: /\/desafio-m5\/game/,
+      path: /\/desafio-final-five\/game/,
       component: initGame,
     },
     {
-      path: /\/desafio-m5\/results/,
+      path: /\/desafio-final-five\/results/,
       component: initResults,
     },
   ];
@@ -46,7 +46,7 @@ export function initRouter(container: Element) {
   }
 
   if (location.host.includes("github.io") || "/") {
-    goTo("/desafio-m5/welcome");
+    goTo("/desafio-final-five/welcome");
   } else {
     handleRoute(location.pathname);
   }

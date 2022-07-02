@@ -133,7 +133,7 @@ export function initResults(params) {
 
   goBack.addEventListener("click", (e) => {
     e.preventDefault();
-    params.goTo("/desafio-m5/instructions/");
+    params.goTo("/desafio-final-five/instructions/");
   });
 
   const resetPoints: any = div.querySelector(".restart");
@@ -146,7 +146,7 @@ export function initResults(params) {
       botScore: 0,
     }),
       state.setState(newData);
-    params.goTo("/desafio-m5/instructions/");
+    params.goTo("/desafio-final-five/instructions/");
   });
 
   div.appendChild(style);
