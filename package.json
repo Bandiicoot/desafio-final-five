@@ -1,0 +1,16 @@
+{
+  "name": "desafio-final-five",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
+    "@types/node": "^17.0.31",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /desafio-m5",
+    "deploy": "gh-pages -d build"
+  }
+}
